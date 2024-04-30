@@ -21,7 +21,7 @@ from flax import linen as nn
 from flax.linen import partitioning as nn_partitioning
 from flax import struct
 
-from maxtext.MaxText.layers import models, quantizations
+from ..maxtext.MaxText.layers import models, quantizations
 
 import jax
 import jax.numpy as jnp
