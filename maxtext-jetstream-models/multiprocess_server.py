@@ -7,7 +7,9 @@ Async API (Server.request())
 '''
 import os, sys
 
-sys.path.append(os.path.join(os.path.dirname(__file__), "/home/ljy/maxtext-stuff/maxtext-jetstream-models/maxtext/MaxText"))
+sys.path.append("/home/ljy/maxtext-stuff/maxtext/MaxText")
+sys.path.append("/home/ljy/maxtext-stuff/maxtext-jetstream-models/")
+sys.path.append("/home/ljy/maxtext-stuff/")
 
 import aiohttp.http_exceptions
 import jax, transformers, time, random, warnings, multiprocess, math, requests, json, \
@@ -30,7 +32,7 @@ from jax_smi import initialise_tracking
 import maxengine
 # from ..maxtext.MaxText import maxengine
 
-from ..maxtext.MaxText import pyconfig
+from maxtext.MaxText import pyconfig
 
 from jetstream.engine.token_utils import take_nearest_length
 
