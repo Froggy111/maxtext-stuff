@@ -27,10 +27,10 @@ from jax import numpy as jnp
 
 from jax_smi import initialise_tracking
 
-# import maxengine
-from maxtext.MaxText import maxengine
+import maxengine
+# from ..maxtext.MaxText import maxengine
 
-from maxtext.MaxText import pyconfig
+from ..maxtext.MaxText import pyconfig
 
 from jetstream.engine.token_utils import take_nearest_length
 
