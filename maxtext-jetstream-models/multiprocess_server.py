@@ -7,7 +7,7 @@ Async API (Server.request())
 '''
 import os, sys
 
-sys.path.append(os.path.join(os.path.dirname(__file__), "maxtext/MaxText"))
+sys.path.append(os.path.join(os.path.dirname(__file__), "/home/ljy/maxtext-stuff/maxtext-jetstream-models/maxtext/MaxText"))
 
 import aiohttp.http_exceptions
 import jax, transformers, time, random, warnings, multiprocess, math, requests, json, \
@@ -129,8 +129,8 @@ server_cfg = {
 
 	# tokenizer settings
 	'tokenizer_config': {
-		'path': "./shared/OpenHermes-2.5-Mistral-7B-param-only-checkpoint/tokenizer",
-		'use_fast': False,
+		'path': "teknium/OpenHermes-2.5-Mistral-7B",
+		'use_fast': True,
 		'padding_side': "right",
 		'pad_token_id': 2,
 		'bos_token_id': 1,

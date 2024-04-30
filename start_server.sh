@@ -1,0 +1,1 @@
+./podrun -i -- bash -c "bash maxtext-stuff/maxtext-jetstream-models/start_server.sh | tee out.txt"

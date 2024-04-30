@@ -27,7 +27,7 @@ import jax
 import jax.numpy as jnp
 from jax.sharding import PartitionSpec as P
 
-from maxtext.MaxText import common_types
+from ..maxtext.MaxText import common_types
 from jetstream.engine import engine_api
 from jetstream.engine import tokenizer_pb2
 
